@@ -1,0 +1,5 @@
+[user]
+	email = ash@e.mail.de
+	name = Andreas Schmidt
+[pull]
+	rebase = false
