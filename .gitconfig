@@ -1,5 +1,5 @@
 [user]
-	email = ash@e.mail.de
+	email = asc8277@gmail.com
 	name = Andreas Schmidt
 [pull]
-	rebase = false
+	rebase = true
