@@ -18,15 +18,7 @@ ZSH_AUTOSUGGEST_HIGHLIGHT_STYLE="fg=249"
 # custom
 [[ -s "$HOME/.zshrc.custom" ]] && source "$HOME/.zshrc.custom"
 
-# nvm
-export NVM_DIR="$HOME/.nvm"
-[[ -s "$NVM_DIR/nvm.sh" ]] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[[ -s "$NVM_DIR/bash_completion" ]] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-# gvm
-[[ -s "$HOME/.gvm/scripts/gvm" ]] && source "$HOME/.gvm/scripts/gvm"
-
-# perlbrew
-[[ -s "$HOME/perl5/perlbrew/etc/bashrc" ]] && source "$HOME/perl5/perlbrew/etc/bashrc"
+# mise
+eval "$(mise activate zsh)"
 
 true
