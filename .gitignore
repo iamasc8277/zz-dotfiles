@@ -1,0 +1,26 @@
+# --- Folders to ignore ---
+.git/
+.DS_Store
+node_modules/
+dist/
+
+# --- Ignore all "local" overrides ---
+# These are files where you put secrets or machine-specific paths
+*.local
+.gitconfig.local
+.zshrc.local
+.bashrc.local
+
+# --- Secret Files (Never commit these) ---
+.ssh/
+.gnupg/
+.aws/
+.netrc
+*.pem
+*.key
+.env*
+
+# --- Application-specific noise ---
+.python-version
+.ruby-version
+.terraform/

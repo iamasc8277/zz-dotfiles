@@ -1,0 +1,9 @@
+[user]
+	email = 15648021+iamasc8277@users.noreply.github.com
+	name = Andreas Schmidt
+
+[pull]
+	rebase = true
+
+[include]
+  path = ~/.gitconfig.local

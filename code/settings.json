@@ -1,0 +1,13 @@
+{
+    "editor.fontFamily": "'JetBrains Mono'",
+    "editor.fontLigatures": true,
+    "editor.tabSize": 2,
+    "git.enableSmartCommit": true,
+    "git.confirmSync": false,
+    "workbench.colorTheme": "Catppuccin Latte",
+    "terminal.integrated.minimumContrastRatio": 1,
+    "terminal.integrated.fontSize": 13,
+    "terminal.integrated.defaultProfile.linux": "zsh",
+    "editor.fontSize": 13,
+    "explorer.confirmDragAndDrop": false
+}
