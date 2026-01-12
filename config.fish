@@ -1,7 +1,4 @@
 if status is-interactive
-    if type -q starship
-        starship init fish | source
-    end
     if type -q mise
         mise activate fish | source
     else if test -x ~/.local/bin/mise
