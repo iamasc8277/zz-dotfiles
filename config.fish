@@ -1,4 +1,6 @@
 if status is-interactive
+    set -U fish_greeting "🐟"
+    
     if type -q mise
         mise activate fish | source
     else if test -x ~/.local/bin/mise
