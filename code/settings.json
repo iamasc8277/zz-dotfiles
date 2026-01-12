@@ -7,7 +7,6 @@
     "workbench.colorTheme": "Catppuccin Latte",
     "terminal.integrated.minimumContrastRatio": 1,
     "terminal.integrated.fontSize": 13,
-    "terminal.integrated.defaultProfile.linux": "fish",
     "editor.fontSize": 13,
     "explorer.confirmDragAndDrop": false
 }
