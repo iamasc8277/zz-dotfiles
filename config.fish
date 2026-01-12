@@ -1,5 +1,5 @@
 if status is-interactive
-    set -U fish_greeting "🐟"
+    set -U fish_greeting
     
     if type -q mise
         mise activate fish | source
@@ -23,30 +23,37 @@ if status is-interactive
     set -g __fish_git_prompt_char_untrackedfiles ' ?'
     set -g __fish_git_prompt_char_upstream_ahead ' ↑'
     set -g __fish_git_prompt_char_upstream_behind ' ↓'
+    set -g __fish_git_prompt_char_stateseparator ''
 
     function fish_prompt
         set -l last_status $status
+        if not set -q __fish_prompt_initialized
+            set -g __fish_prompt_initialized 1
+        else
+            echo ""
+        end
         if test $last_status -ne 0
             set_color red
-            echo "[$last_status]"
+            echo "❌ $last_status"
+            echo ""
         end
-        echo ""
+        set_color normal
+        echo -n "🐟 "
         set_color green
         echo -n $USER
-        set_color white
-        echo -n "@"
+        set_color grey
+        echo -n " on "
         set_color blue
         echo -n (prompt_hostname)
-        set_color white
-        echo -n ":"
+        set_color grey
+        echo -n " at "
         set_color cyan
         echo -n (prompt_pwd)
         set_color yellow
-        fish_vcs_prompt
+        fish_git_prompt
         echo "" 
-        set_color red
-        echo -n "❯ "
+        set_color normal
+        echo -n "╰❯ "
         set_color normal
     end
 end
-
