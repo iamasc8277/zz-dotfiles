@@ -19,11 +19,11 @@ if status is-interactive
     set -g __fish_git_prompt_showcolorhints 1
     set -g __fish_git_prompt_use_informative_chars 1
 
-    set -g __fish_git_prompt_char_dirtystate ' ✗'
-    set -g __fish_git_prompt_char_untrackedfiles ' ?'
-    set -g __fish_git_prompt_char_upstream_ahead ' ↑'
-    set -g __fish_git_prompt_char_upstream_behind ' ↓'
-    set -g __fish_git_prompt_char_stateseparator ''
+    set -g __fish_git_prompt_char_dirtystate '✗'
+    set -g __fish_git_prompt_char_untrackedfiles '?'
+    set -g __fish_git_prompt_char_upstream_ahead '↑'
+    set -g __fish_git_prompt_char_upstream_behind '↓'
+    set -g __fish_git_prompt_char_stateseparator ' '
 
     function fish_prompt
         set -l last_status $status
