@@ -42,18 +42,18 @@ if status is-interactive
         set_color green
         echo -n $USER
         set_color grey
-        echo -n " on "
+        echo -n "@"
         set_color blue
         echo -n (prompt_hostname)
         set_color grey
-        echo -n " at "
+        echo -n ": "
         set_color cyan
         echo -n (prompt_pwd)
         set_color yellow
         fish_git_prompt
         echo "" 
         set_color normal
-        echo -n "╰❯ "
+        echo -n "╰> "
         set_color normal
     end
 end
