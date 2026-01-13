@@ -21,7 +21,7 @@ if status is-interactive
         end
         if test $last_status -ne 0
             set_color red
-            echo "❌ $last_status"
+            echo "⨯ [$last_status]"
             echo ""
         end
         set_color normal
