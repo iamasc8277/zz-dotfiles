@@ -11,6 +11,7 @@ if status is-interactive
     end
 
     set -g fish_prompt_pwd_dir_length 0
+    set -U fish_color_autosuggestion bbb
 
     function fish_prompt
         set -l last_status $status
