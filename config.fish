@@ -33,7 +33,7 @@ if status is-interactive
         set_color blue
         echo -n (prompt_hostname)
         set_color aaa
-        echo -n ": "
+        echo -n " > "
         set_color cyan
         echo -n (prompt_pwd)
         set_color yellow
