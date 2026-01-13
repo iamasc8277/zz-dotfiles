@@ -30,15 +30,17 @@ if status is-interactive
         end
         set_color cyan
         echo -n "🐟 "
+        set_color green
         echo -n $USER
         echo -n "@"
         echo -n (prompt_hostname)
-        echo -n " > "
+        echo -n " "
+        set_color blue
         echo -n (prompt_pwd)
+        set_color yellow
         fish_vcs_prompt
         echo "" 
-        set_color cyan
-        echo -n "~> "
         set_color normal
+        echo -n "~> "
     end
 end
