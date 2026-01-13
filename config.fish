@@ -11,7 +11,10 @@ if status is-interactive
     end
 
     set -g fish_prompt_pwd_dir_length 0
-    set -U fish_color_autosuggestion bbb
+    set -g fish_color_autosuggestion cyan
+    set -g fish_color_command normal
+    set -g fish_color_param normal
+    set -g fish_color_option normal
 
     function fish_prompt
         set -l last_status $status
@@ -25,22 +28,17 @@ if status is-interactive
             echo "⨯ [$last_status]"
             echo ""
         end
-        set_color normal
-        echo -n "🐟 "
-        set_color green
-        echo -n $USER
-        set_color aaa
-        echo -n "@"
-        set_color blue
-        echo -n (prompt_hostname)
-        set_color aaa
-        echo -n " > "
         set_color cyan
+        echo -n "🐟 "
+        echo -n $USER
+        echo -n " @ "
+        echo -n (prompt_hostname)
+        echo -n " > "
         echo -n (prompt_pwd)
         set_color yellow
         fish_vcs_prompt
         echo "" 
-        set_color aaa
+        set_color cyan
         echo -n "~> "
         set_color normal
     end
