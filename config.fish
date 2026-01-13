@@ -12,7 +12,7 @@ if status is-interactive
 
     set -g fish_prompt_pwd_dir_length 0
     set -g fish_color_autosuggestion cyan
-    set -g fish_color_command normal
+    set -g fish_color_command green
     set -g fish_color_param normal
     set -g fish_color_option normal
 
