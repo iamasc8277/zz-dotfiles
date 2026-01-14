@@ -8,5 +8,6 @@
     "terminal.integrated.minimumContrastRatio": 1,
     "terminal.integrated.fontSize": 13,
     "editor.fontSize": 13,
-    "explorer.confirmDragAndDrop": false
+    "explorer.confirmDragAndDrop": false,
+    "explorer.confirmDelete": false
 }

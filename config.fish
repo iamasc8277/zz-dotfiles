@@ -30,11 +30,8 @@ if status is-interactive
         end
         set_color cyan
         echo -n "🐟 "
-        set_color green
         echo -n $USER
-        set_color cyan
         echo -n "@"
-        set_color green
         echo -n (prompt_hostname)
         echo -n " "
         set_color blue
