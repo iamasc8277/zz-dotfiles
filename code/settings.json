@@ -1,10 +1,10 @@
 {
-    "editor.fontFamily": "'JetBrains Mono'",
+    "editor.fontFamily": "'Cascadia Code'",
     "editor.fontLigatures": true,
     "editor.tabSize": 2,
     "git.enableSmartCommit": true,
     "git.confirmSync": false,
-    "workbench.colorTheme": "Catppuccin Latte",
+    "workbench.colorTheme": "Nord",
     "terminal.integrated.minimumContrastRatio": 1,
     "terminal.integrated.fontSize": 13,
     "editor.fontSize": 13,

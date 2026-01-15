@@ -1,6 +1,6 @@
 if status is-interactive
-    set -U fish_greeting
-    
+    set -U fish_greeting "🐟 $version"
+
     if type -q mise
         mise activate fish | source
     else if test -x ~/.local/bin/mise
@@ -10,36 +10,7 @@ if status is-interactive
         source $HOME/custom.fish
     end
 
-    set -g fish_prompt_pwd_dir_length 0
-    set -g fish_color_autosuggestion cyan
-    set -g fish_color_command green
-    set -g fish_color_param normal
-    set -g fish_color_option normal
-
-    function fish_prompt
-        set -l last_status $status
-        if not set -q __fish_prompt_initialized
-            set -g __fish_prompt_initialized 1
-        else
-            echo ""
-        end
-        if test $last_status -ne 0
-            set_color red
-            echo "⨯ [$last_status]"
-            echo ""
-        end
-        set_color cyan
-        echo -n "🐟 "
-        echo -n $USER
-        echo -n "@"
-        echo -n (prompt_hostname)
-        echo -n " "
-        set_color blue
-        echo -n (prompt_pwd)
-        set_color yellow
-        fish_vcs_prompt
-        echo "" 
-        set_color normal
-        echo -n "~> "
+    function add_newline_before_prompt --on-event fish_prompt
+        echo ""
     end
 end
