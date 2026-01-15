@@ -1,3 +1,3 @@
 # zz-dotfiles
 
-my dotfiles for zsh, git, code
+my dotfiles for fish, git, code
